@@ -1,5 +1,5 @@
 # TopHeavyLayoutManager
-Customize the LayoutManager of RecyclerView(自定义LayoutManager)
+Top Heavy LayoutManager of RecyclerView(头重式LayoutManager)
 ## Effect display
 <img width="320" height="564" src="https://github.com/ljm17/TopHeavyLayoutManager/raw/master/images/display.gif"/><br/>
 ## Usage
