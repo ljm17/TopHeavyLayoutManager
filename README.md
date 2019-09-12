@@ -42,10 +42,10 @@ TopSnapHelper(int fillingLimit);
 space|相邻child view之间的距离|
 childScale|尾部child view的缩放值|
 coverScale|头部被覆盖的child view的缩放值|
-fillingLimit||手指离开后filling的页数限制|
+fillingLimit|手指离开后filling的页数限制|
 
 <br/>
-如果想要实现无限循环，只需在Recyclerview.Adapter的getItemCount中返回Integer.MAX_VALUE，设置无限循环后，默认首个展示的item position为Integer.MAX_VALUE/2，若需调整请调用mRecyclerView.scrollToPosition(position)方法
+如果想要实现无限循环，只需在RecyclerView.Adapter的getItemCount中返回Integer.MAX_VALUE，设置无限循环后，默认首个展示的item position为Integer.MAX_VALUE/2，若需调整请调用RecyclerView.scrollToPosition(position)方法
 
 ### Example：
 ```
@@ -56,14 +56,14 @@ helper.attachToRecyclerView(mRecyclerView);
 ```
 
 # License
-Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
+Licensed under the Apache License, Version 2.0 (the "License");<br/>
+   you may not use this file except in compliance with the License.<br/>
    You may obtain a copy of the License at
 
        http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br/>
    See the License for the specific language governing permissions and
    limitations under the License.
