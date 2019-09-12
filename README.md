@@ -2,7 +2,7 @@
 Customize the LayoutManager of RecyclerView(自定义LayoutManager)
 # Effect display
 <img width="320" height="564" src="https://github.com/ljm17/TopHeavyLayoutManager/raw/master/images/display.gif"/><br/>
-# Usage
+## Usage
 ### Dependency：
 Step 1. Add the JitPack repository to your build file
 
@@ -54,7 +54,7 @@ TopSnapHelper helper = new TopSnapHelper(2);
 helper.attachToRecyclerView(mRecyclerView);
 ```
 
-# License
+## License
 Licensed under the Apache License, Version 2.0 (the "License");<br/>
    you may not use this file except in compliance with the License.<br/>
    You may obtain a copy of the License at
