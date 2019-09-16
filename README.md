@@ -40,13 +40,15 @@ TopSnapHelper(int fillingLimit);
 
 参数|介绍
 -|-
-space|相邻child view之间的距离,默认 60 px|
+space|相邻child view之间的间距,默认 60 px|
 childScale|尾部child view的缩放值,默认 0.5f|
 coverScale|头部被覆盖的child view的缩放值,默认0.8f|
 fillingLimit|手指离开后filling的页数限制|
 
 <br/>
 如果想要实现无限循环，只需在RecyclerView.Adapter的getItemCount中返回Integer.MAX_VALUE，设置无限循环后，默认首个展示的item position为Integer.MAX_VALUE/2，若需调整请调用mRecyclerView.scrollToPosition(position)方法
+<br/>
+*注意：不宜设置ItemDecoration，以免引起布局偏差。
 
 ### Example：
 ```
