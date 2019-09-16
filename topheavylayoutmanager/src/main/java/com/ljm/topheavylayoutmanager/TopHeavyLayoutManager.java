@@ -8,9 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Top Heavy Layout Manager
  * @Date 2019-9-9
  * @author Ljm
+ * GitHub地址：https://github.com/ljm17/TopHeavyLayoutManager
+ * Desc：Top Heavy Layout Manager
  */
 public class TopHeavyLayoutManager extends RecyclerView.LayoutManager implements RecyclerView.SmoothScroller.ScrollVectorProvider {
 
@@ -103,8 +104,8 @@ public class TopHeavyLayoutManager extends RecyclerView.LayoutManager implements
 
             View view = recycler.getViewForPosition(0);
             measureChildWithMargins(view, 0, 0);
-            mItemWidth = view.getMeasuredWidth();
-            mItemHeight = view.getMeasuredHeight();
+            mItemWidth = getDecoratedMeasuredWidth(view);
+            mItemHeight = getDecoratedMeasuredHeight(view);
             removeAndRecycleView(view, recycler);
 
             mInfinite = state.getItemCount() == Integer.MAX_VALUE;
@@ -217,8 +218,8 @@ public class TopHeavyLayoutManager extends RecyclerView.LayoutManager implements
         addView(child);
 
         measureChildWithMargins(child, 0, 0);
-        int width = child.getMeasuredWidth();
-        int height = child.getMeasuredHeight();
+        int width = getDecoratedMeasuredWidth(child);
+        int height = getDecoratedMeasuredHeight(child);
         layoutDecorated(child, left, getPaddingTop(), left + width, height + getPaddingTop());
         handleChildView(child, left - getPaddingLeft());
     }

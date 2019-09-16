@@ -1,8 +1,4 @@
 package com.ljm.topheavylayoutmanager;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
 
 import android.graphics.PointF;
 import android.support.annotation.NonNull;
@@ -14,9 +10,10 @@ import android.support.v7.widget.SnapHelper;
 import android.view.View;
 
 /**
- * Start Page Alignment
  * @Date 2019-9-10
  * @author Ljm
+ * GitHub地址：https://github.com/ljm17/TopHeavyLayoutManager
+ * Desc：Start Page Alignment
  */
 public class TopSnapHelper extends SnapHelper {
 
